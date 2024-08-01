@@ -243,7 +243,7 @@ span {
   color: var(--span-color);
   padding: 5px;
   margin: 5px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 /* start grid fallback */
@@ -337,110 +337,57 @@ table {
     align-items: flex-start;
   }
 
-  .navigation-list {
+  .navigation-list,
+  .main-navigation,
+  .profile_portrait,
+  .profile_text,
+  .content,
+  .page_footer {
     width: 100%;
+  }
+
+  .navigation-list {
     justify-content: center;
     margin-top: 10px;
   }
 
-  .main-navigation {
-    width: 100%;
-  }
-
   .profile_portrait,
   .profile_text {
-    width: 100%;
     margin: auto;
   }
 
   .content {
-    width: 100%;
     padding: 20px;
   }
 
   .page_footer {
     padding: 10px;
-    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  .page-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation-list {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .main-navigation {
-    width: 100%;
-  }
-
   .content {
-    width: 100%;
     padding: 10px;
-  }
-
-  .profile_portrait,
-  .profile_text {
-    width: 100%;
-    margin: auto;
   }
 
   .page_footer {
-    padding: 10px;
     text-align: center;
   }
 }
 
-@media all and (max-width: 500px) {
-  .page-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation-list {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .main-navigation {
-    width: 100%;
-  }
-
-  .content {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .profile_portrait,
-  .profile_text {
-    width: 100%;
-    margin: auto;
-  }
-
-  .page_footer {
-    padding: 10px;
-    text-align: center;
-  }
-
+@media (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
+@media (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
@@ -462,11 +409,14 @@ table {
 
 .moon {
   position: absolute;
+
+  /* not combine way is:
   animation-duration: 10s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
+  animation: color-change 10s linear infinite alternate;
 }
 
 @keyframes color-change {
