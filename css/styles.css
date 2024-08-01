@@ -277,10 +277,6 @@ table {
   margin: auto;
 }
 
-footer {
-  margin-top: 2000px;
-}
-
 .page_footer {
   clear: both;
   display: flex;
