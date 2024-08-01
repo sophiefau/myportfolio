@@ -182,7 +182,6 @@ button:focus,
 }
 
 .content {
-  min-width: 700px;
   max-width: 1200px;
   text-align: center;
   margin: auto;
@@ -277,6 +276,17 @@ table {
   margin: auto;
 }
 
+.contact {
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+#contact-form {
+  margin-top: 50px;
+}
+
 .page_footer {
   clear: both;
   display: flex;
@@ -285,13 +295,13 @@ table {
   align-items: center;
   width: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .social-media {
   display: flex;
   justify-content: center; /* Center the social media icons */
-  padding: 10px;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {
@@ -320,7 +330,7 @@ table {
 
   .page_footer {
     padding: 10px;
-    width: 100%;
+    text-align: center;
   }
 }
 
@@ -353,6 +363,7 @@ table {
 
 #forestillustration {
   margin: auto;
+  width: 100%;
 }
 
 .moon {
