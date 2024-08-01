@@ -69,6 +69,8 @@ h3 {
   font-weight: 500;
   font-size: 17px;
   line-height: 1.4em;
+  display: flex;
+  float: right;
 }
 
 .page-header {
@@ -77,6 +79,16 @@ h3 {
   justify-content: space-between;
   padding: 20px;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.page-header_item {
+  flex: 0 1 100px;
+}
+
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
 }
 
 a {
@@ -191,21 +203,6 @@ button:focus,
 .button:focus {
   cursor: pointer; /* lets the mouse appear as a hand when hovering over the button */
   opacity: 0.8; /* reduces the opacity of the button to 80% */
-}
-
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-}
-
-.page-header_item {
-  flex: 0 1 100px;
-}
-
-.page-header_item:last-child {
-  flex-grow: 1;
-  text-align: right;
 }
 
 .content {
