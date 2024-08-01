@@ -182,7 +182,9 @@ button:focus,
 }
 
 .content {
-  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
   text-align: center;
   margin: auto;
   justify-content: center;
@@ -191,25 +193,25 @@ button:focus,
 }
 
 .profile_portrait {
-  width: 50%;
   vertical-align: top;
   padding: 0 20px;
   float: left;
+  margin-left: 30%;
 }
 
 .img_profile {
   max-width: 250px;
   border-radius: 50%;
-  margin-left: 50%;
 }
 
 .profile_text {
   flex: 1 1 100px;
-  width: 30%;
   vertical-align: top;
   padding: 0 20px;
-  float: left;
+  text-align: center;
   font-weight: 500;
+  margin: auto;
+  float: left;
 }
 
 span {
@@ -307,8 +309,8 @@ table {
 @media (max-width: 768px) {
   .profile_portrait,
   .profile_text {
-    display: block;
     width: 100%;
+    margin: auto;
   }
 
   .content {
@@ -328,6 +330,12 @@ table {
     padding: 10px;
   }
 
+  .profile_portrait,
+  .profile_text {
+    width: 100%;
+    margin: auto;
+  }
+
   .page_footer {
     padding: 10px;
     text-align: center;
@@ -335,6 +343,22 @@ table {
 }
 
 @media all and (max-width: 500px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .profile_portrait,
+  .profile_text {
+    width: 100%;
+    margin: auto;
+  }
+
+  .page_footer {
+    padding: 10px;
+    text-align: center;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
