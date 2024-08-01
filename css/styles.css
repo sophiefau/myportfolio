@@ -183,7 +183,6 @@ button:focus,
 
 .content {
   width: 100%;
-  height: auto;
   display: inline-block;
   text-align: center;
   margin: auto;
@@ -193,7 +192,7 @@ button:focus,
 }
 
 .profile_portrait {
-  vertical-align: top;
+  margin-top: 20px;
   padding: 0 20px;
   float: left;
   margin-left: 30%;
@@ -206,8 +205,7 @@ button:focus,
 
 .profile_text {
   flex: 1 1 100px;
-  vertical-align: top;
-  padding: 0 20px;
+  padding: 20px 10px 0 10px;
   text-align: center;
   font-weight: 500;
   margin: auto;
