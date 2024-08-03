@@ -369,6 +369,11 @@ span {
   display: inline-block;
 }
 
+.about-text {
+  max-width: 750px;
+  margin: auto;
+}
+
 table {
   width: 100%;
   margin: auto;
