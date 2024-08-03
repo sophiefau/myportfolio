@@ -374,6 +374,21 @@ span {
   margin: auto;
 }
 
+#contact-email {
+  margin: 10px;
+  width: 250px;
+}
+
+#contact-tel {
+  margin: 10px;
+}
+
+#contact-message {
+  margin: 10px;
+  min-width: 300px;
+  min-height: 150px;
+}
+
 table {
   width: 100%;
   margin: auto;

@@ -2,86 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.production.css">
 
-    <script src="js/tota11y.min.js"></script>
+  <script src="js/tota11y.min.js"></script>
 
-    <title>contact page</title>
-    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+  <title>contact page</title>
+  <link rel="shortcut icon" href="./img/favicon-32x32.png">
 </head>
 
 <body>
-    <header class="page-header">
-      <div>
-        <img src="img/logogreen.png" width="100" height="70" class="page-header_item"
-            alt="logo showing a computer and a mobile phone in green color">
-            <p id="logo-name">Sophie Fauquembergue <br> Web development</p>
-        </div>
-        
-        <nav class="main-navigation page-header_item brackets">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list_item">Portfolio</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem"
-                        class="navigation-list_item navigation-list_item-active">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="content">
-            <h1>Sophie Fauquembergue</h1>
-            <a href="mailto:sophiefauquembergue@gmail.com" class="button">Contact me </a>
+  <header class="page-header">
+    <div>
+      <img src="img/logogreen.png" width="100" height="70" class="page-header_item"
+        alt="logo showing a computer and a mobile phone in green color">
+      <p id="logo-name">Sophie Fauquembergue <br> Web development</p>
+    </div>
 
-            <form action="action_page.php" method="post" id="contact-form">
-                <label for="contact-email" class="standard-label">Email: </label>
-                <input type="email" id="contact-email" required>
+    <nav class="main-navigation page-header_item brackets">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list_item">Portfolio</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list_item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list_item navigation-list_item-active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="content">
+      <h1>Sophie Fauquembergue</h1>
+      <a href="mailto:sophiefauquembergue@gmail.com" class="button">Contact me </a>
 
-                <label for="tel" class="standard-label">Telephone: </label>
-                <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      <form action="action_page.php" method="post" id="contact-form">
+        <label for="contact-email" class="standard-label">Email: </label>
+        <input type="email" id="contact-email" required>
 
-                <label for="message" class="standard-label">Message: </label>
-                <textarea required maxlength="240" id="message"></textarea>
+        <label for="tel" class="standard-label">Telephone: </label>
+        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        <br>
+        <label for="message" class="standard-label">Message: </label>
+        <br>
+        <textarea required maxlength="240" id="contact-message"></textarea>
+        <br>
+        <input type="submit" value="Send message">
+      </form>
 
-                <input type="submit" value="Send message">
-            </form>
-
-            <div class="contact">
-                <a href="tel:+4915735888847">Tel:+4915735888847</a> <br>
-                <a href="mailto:sophiefauquembergue@gmail.com">Email:sophiefauquembergue@gmail.com</a>
-            </div>
-        </div>
-    </main>
-    <footer class="page_footer">
-        <p class="text-italic">Find me on</p>
-        <div class="social-media">
-            <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a> <br>
-        </div>
-    </footer>
+      <div class="contact">
+        <a href="tel:+4915735888847">Tel:+4915735888847</a> <br>
+        <a href="mailto:sophiefauquembergue@gmail.com">Email:sophiefauquembergue@gmail.com</a>
+      </div>
+    </div>
+  </main>
+  <footer class="page_footer">
+    <p class="text-italic">Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/sophiefau" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a> <br>
+    </div>
+  </footer>
 </body>
 
 </html>
