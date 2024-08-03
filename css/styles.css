@@ -328,7 +328,6 @@ table {
 .social-media {
   display: flex;
   justify-content: center; /* Center the social media icons */
-  gap: 10px;
 }
 
 @media (max-width: 768px) {

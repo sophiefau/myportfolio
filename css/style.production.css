@@ -414,8 +414,8 @@ table {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; /* Center the social media icons */
-  gap: 10px;/* might not be recognized by old browsers but not so important */
+  justify-content: center; /* Center the social media icons
+  gap: 10px; might not be recognized by old browsers but not so important */
 }
 
 @media (max-width: 768px) {
@@ -552,6 +552,6 @@ table {
 }
 
 @keyframes move-star {
-  from { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
-  to { -webkit-transform: translate(1000px, 2200px); transform: translate(1000px, 2200px); }
+  from { -webkit-transform: translate(0, 0); }
+  to { -webkit-transform: translate(1000px, 2200px); }
 }
