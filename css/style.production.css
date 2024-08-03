@@ -363,6 +363,12 @@ span {
   margin-top: 100px;
 }
 
+.about-svg-img {
+  max-width: 750px;
+  margin: auto;
+  display: inline-block;
+}
+
 table {
   width: 100%;
   margin: auto;
